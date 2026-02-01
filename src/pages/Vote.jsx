@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 // Minimal, dark, modern voting page with backend integration
 // Polls for active polls every 2 seconds, detects closed polls
 
-const API_BASE_URL = 'http://localhost:3000/api'
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
 
 export default function VotePage() {
   const navigate = useNavigate()
